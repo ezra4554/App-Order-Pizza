@@ -48,9 +48,9 @@ class MyAdapter(private val dataList: List<DataModel>, private val context: Cont
                 noItemOrder.text = dataModel.orderCount.toString()
             }
             linearLayout.setOnClickListener {
-                var countItem = dataModel.orderCount++
+                dataModel.orderCount++
                 noItemOrder.visibility = View.VISIBLE;
-                noItemOrder.text = countItem.toString()
+                noItemOrder.text = dataModel.orderCount.toString()
                 val intent = Intent(packageContext, DetailMenu::class.java)
                 intent.putExtra("NAME_TXT", dataModel.nameTxt)
                 intent.putExtra("SELECTED_CITY", dataModel.cityTxt)
