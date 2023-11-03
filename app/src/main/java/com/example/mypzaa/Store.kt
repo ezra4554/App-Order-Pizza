@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class Store : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class Store : AppCompatActivity() {
             intent.putExtra("NAME_TXT",nameTxt)
             intent.putExtra("SELECTED_CITY", cityTxt)
             startActivity(intent)
+            Toast.makeText(applicationContext, "CLICKED", Toast.LENGTH_SHORT).show()
         }
     }
 }

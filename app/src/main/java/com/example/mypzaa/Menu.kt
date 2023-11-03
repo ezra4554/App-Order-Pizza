@@ -15,7 +15,6 @@ class Menu : AppCompatActivity() {
 
         val nameTxt = intent.getStringExtra("NAME_TXT")?:""
         val cityTxt = intent.getStringExtra("SELECTED_CITY")?:""
-        //val btnAddOrderItem: Button = findViewById(R.id.btnAddCart)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         val nameGet: TextView = findViewById(R.id.textName)
 
@@ -32,11 +31,5 @@ class Menu : AppCompatActivity() {
         val adapter = MyAdapter(dataList, applicationContext, this@Menu)
         recyclerView.adapter = adapter
 
-//        btnAddOrderItem.setOnClickListener {
-//            val intent = Intent(this@Menu, DetailMenu::class.java)
-//            intent.putExtra("NAME_TXT", nameTxt)
-//            intent.putExtra("SELECTED_CITY", cityTxt)
-//            startActivity(intent)
-//        }
     }
 }

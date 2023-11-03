@@ -1,21 +1,15 @@
 package com.example.mypzaa
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.ViewParent
-import android.view.inputmethod.EditorInfo
-import android.view.inputmethod.InputMethodManager
-import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
-import java.text.FieldPosition
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,18 +37,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             override fun onNothingSelected(parent: AdapterView<*>?){
-                //
+                //kosong
             }
         }
-//        nameTxt.setOnEditorActionListener { _, actionId, _ ->
-//            if (actionId == EditorInfo.IME_ACTION_DONE) {
-//                // Dismiss the keyboard
-//                val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-//                inputMethodManager.hideSoftInputFromWindow(nameTxt.windowToken, 0)
-//                return@setOnEditorActionListener true
-//            }
-//            false
-//        }
 
         submitBtn.setOnClickListener{
             val selectedCity = spinner.selectedItem.toString()
@@ -63,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("NAME_TXT", inputName)
             intent.putExtra("SELECTED_CITY", selectedCity)
             startActivity(intent)
-            Toast.makeText(applicationContext, "clicked submit", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "CLICKED", Toast.LENGTH_SHORT).show()
         }
     }
 }

@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class MyAdapter(private val dataList: List<DataModel>, private val context: Context, private val packageContext: Context): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
@@ -19,9 +18,6 @@ class MyAdapter(private val dataList: List<DataModel>, private val context: Cont
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataList[position]
-//        holder.imageView.setImageResource(item.imageResource)
-//        holder.textViewTitle.text = item.title
-//        holder.textViewDescription.text = item.description
         holder.bind(item, context, packageContext)
     }
 
@@ -56,7 +52,7 @@ class MyAdapter(private val dataList: List<DataModel>, private val context: Cont
                 intent.putExtra("SELECTED_CITY", dataModel.cityTxt)
                 intent.putExtra("TITLE_MENU", dataModel.title)
                 packageContext.startActivity(intent, null)
-                Toast.makeText(context, "clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "CLICKED", Toast.LENGTH_SHORT).show()
             }
         }
     }

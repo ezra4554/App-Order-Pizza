@@ -25,12 +25,6 @@ class Order : AppCompatActivity() {
         orderStoreName.text = "Store: ${cityTxt}"
         orderMenuName.text = "${titleMenu} sudah dipesan"
 
-//        delivOne.setOnClickListener{
-//            delivTwo.isSelected = false
-//        }
-//        delivTwo.setOnClickListener{
-//            delivOne.isSelected = false
-//        }
 
         var isCheckedDelivOne = false
         var isCheckedDelivTwo = false
@@ -67,7 +61,6 @@ class Order : AppCompatActivity() {
 
         btnFinish.setOnClickListener {
             if (isCheckedDelivOne) {
-                //delivTwo.isSelected = false
                 Toast.makeText(
                     applicationContext,
                     "Terima kasih Pa ${nameTxt} sudah memesan ditoko kami, pesanan ${titleMenu} anda silahkan ambil di toko",
