@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Pzaa</string>
+    <string name="textDetailMenu2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, mi nec luctus tristique, eros elit dictum mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, mi nec luctus tristique, eros elit dictum mauris.</string>
+    <string name="textDetailMenu1">Price Rp 100.000</string>
+    <string name="menu1">Italian Pizza</string>
+    <string name="menu2">Special Burger</string>
+    <string name="menu3">Sandwich Wagyu</string>
+    <string name="menu4">Fried Fries</string>
+    <string name="desc_menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.</string>
+    <string-array name="spinner_items">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+    </string-array>
+</resources>

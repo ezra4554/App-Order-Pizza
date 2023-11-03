@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/imgMain"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="300sp"
+        android:background="@drawable/store"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/storeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        android:textSize="25sp"
+        android:textColor="@color/primary"
+        style="@style/boldTxt"
+        app:layout_constraintTop_toBottomOf="@id/imgMain"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Spinner
+        android:id="@+id/spinnerMain"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:layout_constraintTop_toBottomOf="@id/storeMain"/>
+    <EditText
+        android:id="@+id/editTextMain"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Write Your City"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMain"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/nameMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:textSize="25sp"
+        android:textColor="@color/primary"
+        style="@style/boldTxt"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMain"/>
+    <EditText
+        android:id="@+id/editTextMain2"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Please fill your name"
+        app:layout_constraintTop_toBottomOf="@+id/nameMain"/>
+    <Button
+        android:id="@+id/submitMainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/editTextMain2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

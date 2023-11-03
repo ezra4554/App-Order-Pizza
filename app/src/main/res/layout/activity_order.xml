@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:layout_margin="25sp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtOrder1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Order Detail"
+            style="@style/boldTxt"
+            android:textColor="@color/primary"/>
+        <TextView
+            android:id="@+id/txtOrder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:id="@+id/txtOrder3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store: "
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txtOrder4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Item"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Pengiriman"
+            style="@style/boldTxt"
+            android:textColor="@color/primary"
+            android:layout_marginTop="10sp"/>
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambil Sendiri"
+            android:textSize="20sp"/>
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fast Delivery (minimal 30 menit sampai)"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Done"
+            android:textSize="25sp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="50sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutItems"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+        android:src="@color/primary"
+        app:shapeAppearance="@style/RoundedImage"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="175sp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/titleMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            style="@style/boldTxt"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/descMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/noItemOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_marginRight="5sp"
+        android:textSize="20sp"/>
+</LinearLayout>
